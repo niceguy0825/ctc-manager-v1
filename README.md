@@ -10,7 +10,7 @@ $ yarn start:dev
 
 $ yarn start:local
 
-## ctc manage 폴더 구조
+## kfund24 admin 폴더 구조
 
 - src 폴더
 - src/assets: 이미지, 폰트 등
