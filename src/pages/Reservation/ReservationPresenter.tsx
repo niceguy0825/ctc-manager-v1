@@ -11,43 +11,42 @@ interface ReservationParams {
 }
 
 export default ({ reservation, loading }: ReservationParams) => (
-  <Table dataSource={reservation || []} loading={loading} rowKey="id"> {/* 빈 배열로 대체 */}
+  <Table dataSource={reservation || []} loading={loading} rowKey="id">
     <Column
-      title="요청날짜"
+      title={<div style={{ textAlign: 'center' }}>요청날짜</div>}
       dataIndex="created_at"
       key="created_at"
-      render={(value) => value && dateReturnToFormat(value)} // null 체크 및 날짜 포맷 변환
+      width={200}
+      align="center" // 내용 중앙 정렬
+      render={(value) => value && dateReturnToFormat(value)}
     />
     <Column
-      title="회사이름"
+      title={<div style={{ textAlign: 'center' }}>회사이름</div>}
       dataIndex="company_name"
       key="company_name"
+      align="center" // 내용 중앙 정렬
       render={(value) => value}
     />
     <Column
-      title="이름"
+      title={<div style={{ textAlign: 'center' }}>이름</div>}
       dataIndex="name"
       key="name"
+      align="center" // 내용 중앙 정렬
       render={(value) => value}
     />
     <Column
-      title="연락처"
+      title={<div style={{ textAlign: 'center' }}>연락처</div>}
       dataIndex="phone"
       key="phone"
+      align="center" // 내용 중앙 정렬
       render={(value) => value}
     />
     <Column
-      title="개인정보동의"
+      title={<div style={{ textAlign: 'center' }}>개인정보수집</div>}
       dataIndex="agree"
       key="agree"
-      render={(value) => (value ? "동의" : "비동의")} // true/false를 '동의'/'비동의'로 표시
+      align="center" // 내용 중앙 정렬
+      render={(value) => (value ? "동의" : "비동의")}
     />
-    {/* <Column
-      title="유저 ID"
-      dataIndex="id"
-      key="id"
-      align='center'
-      render={(text: string) => text}
-    /> */}
   </Table>
 );
