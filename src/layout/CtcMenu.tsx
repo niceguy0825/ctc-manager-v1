@@ -27,7 +27,7 @@ const items: MenuProps['items'] = [
   getItem(<Link to="/">Dashboard</Link>, 'home', <AntDesignOutlined />),
 
   getItem('회원 관리', 'user_tab', <UnorderedListOutlined />, [
-    getItem(<Link to="/user">회원목록</Link>, 'user')]),
+    getItem(<Link to="/user">상담관리</Link>, 'user')]),
 
   // getItem('판매점 관리', 'shop_tab', <UnorderedListOutlined />, [
   //   getItem(<Link to="/shop">판매점 목록</Link>, 'shop'),
@@ -39,10 +39,9 @@ const items: MenuProps['items'] = [
   //   getItem(<Link to="/product/enroll">제품 등록</Link>, 'product_enroll'),
   // ]),
 
-  // getItem('리뷰 관리', 'product_tab', <UnorderedListOutlined />, [
-  //   getItem(<Link to="/review">리뷰 목록</Link>, 'review'),
-  //   getItem(<Link to="/review/enroll">리뷰 등록</Link>, 'review_enroll'),
-  // ]),
+  getItem('상담 관리', 'reservation_tab', <UnorderedListOutlined />, [
+    getItem(<Link to="/reservation">상담 목록</Link>, 'reservation'),
+  ]),
 
   // getItem('인플루언서 관리', 'influencer_tab', <UnorderedListOutlined />, [
   //   getItem(<Link to="/influencer">리뷰 목록</Link>, 'influencer'),
