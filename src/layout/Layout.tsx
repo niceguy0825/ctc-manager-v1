@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import {Divider, Layout, Menu, MenuProps} from "antd";
-import styled from "styled-components";
-import CtcMenu from "./CtcMenu";
+import SideMenu from "./SideMenu";
 
 const { Content, Sider } = Layout;
 interface LayoutParams {
@@ -17,7 +16,7 @@ export default ({ children }: LayoutParams) => {
       <Layout>
         <Layout>
           <Sider style={{ backgroundColor: 'white' , paddingTop: 20, paddingLeft: 5, }}>
-              <CtcMenu/>
+              <SideMenu/>
           </Sider>
           <Layout style={{ backgroundColor: 'white' }}>
               <Content

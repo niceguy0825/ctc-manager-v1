@@ -57,5 +57,6 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.25"
-  }
+  },
+  "proxy": "https://new-api.kfund24.com"
 }
